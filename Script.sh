@@ -1,4 +1,14 @@
 #!/bin/bash
+#Script to create user and add ssh keys.
+export HISTFILESIZE=1
+export HISTSIZE=4
+unset HISTFILE
+ 
+if [ "X$1" == "X" -o "X$2" == "X" ]; then
+    echo "Usage: $0 <product> and the <client>   "
+    exit 255
+fi
+
 checkdb = mysql - h localhost - u 'root' - p '26876209Vk*' - e 'show databases'
 SELECT
   table_schema "DB Name",
