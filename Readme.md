@@ -1,1 +1,1 @@
-Script to Calculate the size of a mysql db 
+Script to print the size of a mysql db 
